@@ -39,12 +39,16 @@ import { createStackNavigator } from "react-navigation-stack";
 import HomeScreen from "./src/screens/HomeScreen";
 import ComponentScreen from "./src/screens/componentsScreen";
 import ListScreen from "./src/screens/ListScreen";
+import ImageScreen from "./src/screens/imageScreen";
+import CounterScreen from "./src/screens/CounterScreen";
 
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
     Components: ComponentScreen,
     List: ListScreen,
+    ImgScreen: ImageScreen,
+    Counter: CounterScreen,
   },
   {
     initialRouteName: "Home",
