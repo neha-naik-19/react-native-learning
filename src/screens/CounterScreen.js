@@ -7,6 +7,8 @@ const CounterScreen = () => {
 
   const [counter, setCounter] = useState(0);
 
+  console.log("rendered");
+
   return (
     <View>
       <Button
