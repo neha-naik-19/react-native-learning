@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text, StyleSheet, View, Button } from "react-native";
+import { Text, StyleSheet, View, Button, FlatList } from "react-native";
 
 const ColorScreen = () => {
   // todo: fix this
@@ -16,7 +16,15 @@ const ColorScreen = () => {
         }}
       />
 
-      <View style={{ height: 100, width: 100, backgroundColor: randomRgb() }} />
+      <FlatList
+        keyExtractor={(item) => item}
+        data={colors}
+        renderItem={({ item }) => {
+          return (
+            <View style={{ height: 100, width: 100, backgroundColor: item }} />
+          );
+        }}
+      />
     </View>
   );
 };
