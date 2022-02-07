@@ -37,6 +37,15 @@ const HomeScreen = ({ navigation }) => {
         onPress={() => navigation.navigate("SquareReducer")}
         title="SquareReducer Screen"
       />
+      <Button
+        onPress={() => navigation.navigate("TxtScreen")}
+        title="Text Screen"
+      />
+      <Button onPress={() => navigation.navigate("Box")} title="Box Screen" />
+      <Button
+        onPress={() => navigation.navigate("BoxCopy")}
+        title="Box Screen Copy"
+      />
     </View>
   );
 };
